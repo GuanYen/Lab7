@@ -19,4 +19,8 @@ title=expression(T==frac((bar(y)-mu),s/sqrt(n1))) #mathematical annotation -see 
 legend(locator(1),c("Simulated","Theoretical"),col=c("Blue","Red"),lwd=4,lty=1:2,bty="n",title=title) # Legend #
 return(list(w=w,summary=summary(w),sd=sd(w),fun="T")) # some output to use if needed
 }
-myTsim(iter=10000,ymax=0.45)
+myTsim(n1=10,iter=1000,mean1=10,sigma1=4,ymax=0.45)
+myTsim(n1=20,iter=1000,mean1=10,sigma1=4,ymax=0.45)
+myTsim(n1=100,iter=1000,mean1=10,sigma1=4,ymax=0.45)
+myTsim(n1=200,iter=1000,mean1=10,sigma1=4,ymax=0.45)
+myTsim(n1=10,iter=1500,mean1=20,sigma1=10,ymax=0.45)

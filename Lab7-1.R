@@ -19,9 +19,7 @@ legend(locator(1),c("Simulated","Theoretical"),col=c("Blue","Red"),lwd=4,lty=1:2
 return(list(w=w,summary=summary(w),sd=sd(w),fun="Chi-sq")) # some output to use if needed
 }
 windows()
-chisq=mychisim(iter=10000,ymax=0.15)
-
-
+mychisim(n1=10,iter=1500,mean1=20,sigma1=10,ymax=0.15)
 
 
 
